@@ -5,3 +5,9 @@
 <h3><%= @author.country %></h3>
 
 <p><%= simple_format @author.bio %></p>
+
+<h2>Novels</h2>
+
+<% novels = @author.novels.sort_by { |novel| novel.year } %>
+
+<%= render novels, hide_author: true %>
