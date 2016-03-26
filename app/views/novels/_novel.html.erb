@@ -1,0 +1,17 @@
+<div class="novel-item">
+
+   <div class="inline cover">
+      <img class="small-cover" src="<%= novel.cover %>"/>
+   </div>
+
+   <div class="inline details">
+
+      <h3><%= link_to novel.title, novel %></h3>
+      <h4><%= link_to novel.author.name, novel.author %></h4>
+
+      <p><%= novel.year %></p>
+      <p><%= novel.plot %></p>
+
+   </div>
+
+</div>
