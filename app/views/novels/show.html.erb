@@ -1,2 +1,10 @@
-<h1>Novels#show</h1>
-<p>Find me in app/views/novels/show.html.erb</p>
+<h1>
+   <%= @novel.title %>
+</h1>
+
+<h3><%= link_to @novel.author.name, @novel.author %> </h3>
+
+<p><%= @novel.year %></p>
+<p><%= @novel.plot %></p>
+
+<img class="cover" src="<%= @novel.cover %>"/>
