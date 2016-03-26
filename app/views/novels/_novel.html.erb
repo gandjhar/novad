@@ -7,7 +7,10 @@
    <div class="inline details">
 
       <h3><%= link_to novel.title, novel %></h3>
-      <h4><%= link_to novel.author.name, novel.author %></h4>
+
+      <% if !defined?(hide_author) || !hide_author %>
+          <h4><%= link_to novel.author.name, novel.author %></h4>
+      <% end %>
 
       <p><%= novel.year %></p>
       <p><%= novel.plot %></p>
