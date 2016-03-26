@@ -170,3 +170,248 @@ authors.each do | name, country, bio |
    Author.create( name: name, country: country, bio: bio )
 end
 
+
+author_novels = {}
+
+author_novels["Mark Twain"] = [
+
+   [ "The Adventures of Tom Sawyer",
+     1876, "http://csmt.cde.ca.gov/images/0030544610.jpg",
+     "Adventures of a young boy and his friends growing up in a small Missouri town on the banks of the Mississippi River in the nineteenth century.",
+     "Adventure, Comedy, Satire, Folk, Coming of Age, Picaresque" ],
+
+   [ "A Connecticut Yankee in King Arthur's Court",
+     1889, "https://img1.etsystatic.com/000/0/6648867/il_fullxfull.333586431.jpg",
+     "A nineteenth-century American travels back in time to sixth-century England",
+     "Fantasy, Adventure, Satire, Comedy, History" ],
+]
+
+
+author_novels["Ernest Hemmingway"] = [
+
+   [ "The Old Man and the Sea",
+     1952, "http://7summitsproject.com/wp-content/uploads/2015/06/old-man-and-the-sea-review.jpg",
+     "Old Cuban fisherman sails further out to sea than usual in attempt to better his luck.",
+     "Parable, Tragedy, Quest" ],
+
+   [ "A Farewell to Arms",
+     1929, "https://kuwwi.files.wordpress.com/2015/07/farewell-to-arms-people.jpg",
+     "Young American WW1 soldier in Italy is injured and cared for by English nurse's aide.",
+     "Modernism, War, Drama, Historical, Tragedy, Gothic, Romance" ],
+
+   [ "For Whom the Bell Tolls",
+     1940, "http://1.bp.blogspot.com/-hgJGEoU-cuw/Tz6t7RmvjqI/AAAAAAAACug/NFuuUzkTJc4/s1600/forwhom.jpg",
+     "American joins guerrillas in the Spanish Civil war.",
+     "Tragedy, Historical, War, Drama, Romance" ],
+]
+
+author_novels["Kurt Vonnegut"] = [
+
+   [ "Slaughterhouse Five",
+     1969, "https://olinuris.library.cornell.edu/sites/olinuris.library.cornell.edu/files/user3/slaughterhouse5.jpg",
+     "A man becomes unstuck in time and visit various periods of his life.",
+     "Postmodern, Science Fiction, Drama, War, Historical" ],
+
+   [ "Cat's Cradle",
+     1963, "http://41.media.tumblr.com/3bd88ea0d2139ac7f37c13d9e8e6d380/tumblr_n35zkaqy3s1sobxc7o1_1280.jpg",
+     "A man sets out to write a book about the day the atomic bomb was dropped on Hiroshima.",
+     "Satire, Tragidy, Comedy, Science Fiction" ],
+
+   [ "Breakfast of Champions",
+     1973, "https://oudonquijote.files.wordpress.com/2013/02/breakfastofchampions.jpg",
+     "A struggling science fiction writer meets with a wealthy businessman who is going insane.",
+     "Comedy, Satire, Science Fiction, Social Criticism" ],
+
+]
+
+author_novels["Charles Dickens"] = [
+
+   [ "Great Expectations",
+     1861, "https://charlottereadsthings.files.wordpress.com/2015/06/great-expectations-1860.jpg",
+     "Young orphan makes good with the help of a benefactor.",
+     "Coming of Age, Fantasy, Horror, Gothic, Realism" ],
+
+   [ "Oliver Twist",
+     1837, "https://jmusings.files.wordpress.com/2011/11/dickens-olivertwist.jpg",
+     "Young orphan escapes workhouse only to be drawn into a life of crime on the streets.",
+     "Coming of Age, Melodrama, Gothic, Satire, Social Commentary" ],
+
+   [ "The Pickwick Papers",
+     1837, "http://media-cache-ec0.pinimg.com/736x/b2/b7/ab/b2b7ab13e59fd901fdc16ecb68e35fcd.jpg",
+     "President of the Pickwick Club reqcruits three companions to travel the countryside researching the quaint and curious phenomena of life.",
+     "Satire, Comedy, Drama" ],
+]
+
+author_novels["George Orwell"] = [
+
+   [ "1984",
+     1949, "http://www.penguin.co.nz/jpg-large/9780141036144.jpg",
+     "Low ranking party member comes to questions total surveillance by Big Brother.",
+     "Drama, Dystopia, Parody, Science Fiction" ],
+
+   [ "Animal Farm",
+     1945, "http://www.penguin.co.nz/jpg-large/9780141036137.jpg",
+     "Animals of the Manor Farm question the rule of human beings to oppress or control them.",
+     "Fable, Allegory" ],
+]
+
+author_novels["Albert Camus"] = [
+
+   [ "The Stranger",
+     1942, "http://whatyouth.com/wp-content/uploads/2014/09/il_fullxfull.369689885_55zt.jpg",
+     "A man finds happiness in accepting meaninglessness.",
+     "Philosophical, Existential, Crime, Drama" ],
+
+   [ "The Plague",
+     1947, "http://1.bp.blogspot.com/-3EQYU4D3duY/VLidIprA_sI/AAAAAAAADYc/rHYgLe9VuQk/s1600/camus-la-peste-poche-1.jpg",
+     "How do individuals react when quarantined together during a plague outbreak.",
+     "Philosophical, Absurdist, Existential" ],
+]
+
+author_novels["Émile Zola"] = [
+
+   [ "Germinal",
+     1885, "http://ecx.images-amazon.com/images/I/813VZFWSolL.jpg",
+     "Coal miners hope for a better life.",
+     "Drama, Historical" ],
+
+   [ "La Bête Humaine (The Human Beast)",
+     1890, "https://s-media-cache-ak0.pinimg.com/736x/41/98/7b/41987b2d235610e1e64a226910a54dee.jpg",
+     "A man with hereditary madness travels on a train between Paris and Le Havre",
+     "Drama, Thriller, Crime" ],
+
+   [ "L’Oeuvre (The Masterpiece)",
+     1886, "https://readingzola.files.wordpress.com/2014/01/masterpiece_zola.jpg",
+     "The world of artists in 19th century Paris.",
+     "Naturalism, Realism, Tragedy" ],
+
+   [ "Thérèse Raquin",
+     1867, "https://cdn.theculturetrip.com/wp-content/uploads/2015/06/56-3660884-143281081411d421b1694c48da977ac11e2387de11-498x650.jpg",
+     "A 21-year-old woman who is unhappily married to her cousin.",
+     "Realism, Family, Drama, Tragedy, Gothic" ],
+]
+
+author_novels["Thomas Mann"] = [
+
+   [ "The Magic Mountain",
+     1924, "http://special.lib.uci.edu/collections/thomas-mann/images/mann_magic.jpg",
+     "Engineering graduate travels to a Sanitorium in the Swiss Alps to visit cousin.",
+     "" ],
+
+   [ "Death in Venice",
+     1912, "http://farmingtonlibraries.org/wp-content/uploads/2014/09/death-in-venice.jpg",
+     "Writer temporarily forgos his secluded life to travel to Venice.",
+     "Modernism" ],
+
+   [ "Doctor Faustus",
+     1947, "http://mseffie.com/assignments/faustus/WOW%20Slider/data1/images/thomas_mann.jpg",
+     "Brilliant german composer possibility bargains his ability to love his fellow man for twenty-four years of unparalleled musical accomplishment.",
+     "Drama, Tragedy" ],
+]
+
+author_novels["Franz Kafka"] = [
+   [ "The Trial",
+     1925, "https://hodgsonson.files.wordpress.com/2013/04/the_trial___1962_by_swoboda.jpg",
+     "A respectable bank officer is suddenly and inexplicably arrested and must defend himself against a charge about which he can get no information.",
+     "Philisophcal, Absurdist, Modernism, Dystopian" ],
+
+   [ "The Metamorphosis",
+     1915, "http://dailyasianage.com/library/1452411960_0.jpg",
+     "A man awakens one morning from uneasy dreams to find himself transformed in his bed into a gigantic insect.",
+     "Magical Realism, Modernism, Absurdist" ],
+
+   [ "The Castle",
+     1926, "http://41.media.tumblr.com/68d1ae5ade1a64a99fea0131d15b505e/tumblr_nemwpvSgH11qev7n1o1_1280.jpg",
+     "A man's relentless, unavailing struggle with an inscrutable authority in order to gain access to a castle.",
+     "Philosophical, Dystopian, Political" ],
+
+   [ "Amerika",
+     1927, "https://s-media-cache-ak0.pinimg.com/736x/b9/4c/a5/b94ca5986d3d910fdbfd28ecd107cbd6.jpg",
+     "The bizarre wanderings of sixteen-year-old European immigrant Karl Roßmann, who was forced to go to New York to escape the scandal of his seduction by a housemaid.",
+     "Absurdist" ],
+]
+
+author_novels["Leo Tolstoy"] = [
+   [ "War and Peace",
+     1869, "http://i.huffpost.com/gen/997213/images/o-WAR-AND-PEACE-facebook.jpg",
+     "History of the French invasion of Russia, and the impact of the Napoleonic era on Tsarist society, through the stories of five Russian aristocratic families.",
+     "War, Drama, Historical, Philosophical, Realism, Family, Romance" ],
+
+   [ "Anna Karenina",
+     1877, "https://s-media-cache-ak0.pinimg.com/736x/1b/0b/0a/1b0b0a9852b0eb2d48648d05e9f7f695.jpg",
+     "St. Petersburg aristocrat's life story at the backdrop of the late-19th-century feudal Russian society.",
+     "Family, Drama, Romance, Tragedy, Realism, Psychological" ],
+
+   [ "The Death of Ivan Ilych",
+     1886, "https://s-media-cache-ak0.pinimg.com/736x/b4/2c/78/b42c786e8bb5eb170785a9d2ff64b7b1.jpg",
+     "A worldly careerist, a high court judge who has never given the inevitability of his dying so much as a passing thought until one day, death announces itself, and to his shocked surprise, he is brought face to face with his own mortality.",
+     "Realism, Satire, Parody, Exemplum, Satire" ],
+]
+
+author_novels["Mikhail Bulgakov"] = [
+   [ "The Master and Margarita",
+     1966, "http://www.masterandmargarita.eu/images/01bulgakov/covers/glenny68.jpg",
+     "A visit by the devil to the fervently atheistic Soviet Union.",
+     "Fantastic, Farce, Satire, Modernism" ],
+
+   [ "Heart of a Dog",
+     1968, "http://ikongraf.com/wp-content/uploads/2013/02/Heartdog.jpg",
+     "A world-famous Moscow professor -- rich, successful, and envied by his neighbors -- befriends a stray dog and resolves to achieve a daring scientific first.",
+     "Satire, Science Fiction" ],
+]
+
+author_novels["Haruki Murakami"] = [
+
+   [ "Norwegian Wood",
+     1987, "http://emertainmentmonthly.com/wp-content/uploads/2015/08/91fJxgs69QL._SL1500_.jpg",
+     "Toru, a quiet and preternaturally serious young college student in Tokyo, is devoted to Naoko, a beautiful and introspective young woman, but their mutual passion is marked by the tragic death of their best friend years before.",
+     "Bildungsroman" ],
+
+   [ "Kafka on the Shore",
+     2002, "http://ecx.images-amazon.com/images/I/81wBg2-QXYL.jpg",
+     "A teenage boy runs away from home either to escape a gruesome oedipal prophecy or to search for his long-missing mother and sister; and an aging simpleton who never recovered from a wartime affliction and now is drawn toward Kafka for reasons that, like the most basic activities of daily life, he cannot fathom.",
+     "Speculative" ],
+]
+
+author_novels["Isabel Allende"] = [
+
+   [ "The House of the Spirits",
+     1982, "http://www.sparksummit.com/wp-content/uploads/2015/02/housespirits.jpg",
+     "Patriarch whose wild desires and political machinations are tempered only by his love for his ethereal wife, a woman touched by an otherworldly hand.",
+     "Magical Realism, Family, Drama, Historical" ],
+
+   [ "Eva Luna",
+     1987, "http://image.casadellibro.com/a/l/t0/12/9788497592512.jpg",
+     "A contemporary Scheherazade, a wide-eyed American teller-of-tales who triumphs over harsh reality through the creative power of her own imagination.",
+     "Romance, Speculative" ],
+]
+
+
+author_novels["Salman Rushdie"] = [
+
+   [ "The Satanic Verses",
+     1988, "http://ecx.images-amazon.com/images/I/91AywaiRf7L.jpg",
+     "In a terrorist bombing of a London-bound jet in midflight, two Indian actors of opposing sensibilities fall to earth, transformed into living symbols of what is angelic and evil.",
+     "Magic Realism, Fantasy, Speculative" ],
+
+   [ "Midnight's Children",
+     1981, "http://www.bookfever.com/book_photos/49816.jpg",
+     "Born at the stroke of midnight, at the precise moment of India's independence, Saleem Sinai is destined from birth to be special.",
+     "Magical Realism, Historical, Fantasy" ],
+
+   [ "The Moor's Last Sigh",
+     1995, "http://img5a.flixcart.com/image/book/4/1/9/the-moor-s-last-sigh-original-imadcukzjjffpfef.jpeg",
+     "Moraes Zogoiby speaks to us from a grave in Spain about a life spent in banishment from normal society.",
+     "Magical Realism, Historical, Fantasy" ],
+]
+
+
+author_novels.each do | author_name, novels |
+   author = Author.find_by( name: author_name )
+
+   novels.each do | title, year, cover, plot |
+      novel = Novel.create( title:title, author_id: author.id, year: year, cover: cover, plot: plot )
+   end
+end
+
+
