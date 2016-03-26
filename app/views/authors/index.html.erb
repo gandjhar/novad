@@ -1,4 +1,4 @@
-<h1>Authors</h1>
+<h1>Authors <%= link_to "New Author", new_author_path, class: "btn btn-default", style: "float: right" %></h1>
 
 <% @authors.each do |author| %>
     <p><%= link_to author.name, author %></p>
