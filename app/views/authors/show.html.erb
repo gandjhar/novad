@@ -1,2 +1,7 @@
-<h1>Authors#show</h1>
-<p>Find me in app/views/authors/show.html.erb</p>
+<h1>
+   <%= @author.name %>
+</h1>
+
+<h3><%= @author.country %></h3>
+
+<p><%= simple_format @author.bio %></p>
