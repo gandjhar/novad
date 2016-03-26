@@ -7,4 +7,10 @@
 <p><%= @novel.year %></p>
 <p><%= @novel.plot %></p>
 
+<p>
+   <% @novel.genres.each do |genre| %>
+       <%= link_to "#{genre.name}", genre, class: "btn btn-primary btn-xs" %>
+   <% end %>
+</p>
+
 <img class="cover" src="<%= @novel.cover %>"/>
