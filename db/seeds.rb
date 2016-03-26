@@ -169,6 +169,39 @@ authors.each do | name, country, bio |
 end
 
 
+genres = [
+   "Absurdist",
+   "Bildungsroman",
+   "Action",
+   "Adventure",
+   "Comedy",
+   "Crime",
+   "Drama",
+   "Fantasy",
+   "Family",
+   "Historical",
+   "Horror",
+   "Magical Realism",
+   "Mystery",
+   "Paranoid",
+   "Philosophical",
+   "Political",
+   "Romance",
+   "Saga",
+   "Satire",
+   "Science Fiction",
+   "Speculative",
+   "Surreal",
+   "Thriller",
+   "Urban",
+   "Western",
+]
+
+genres.each do |genre_name|
+   genre = Genre.create( name: genre_name )
+end
+
+
 author_novels = {}
 
 author_novels["Mark Twain"] = [
