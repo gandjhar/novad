@@ -14,6 +14,9 @@
  *= require_self
  */
 
+// Prevent Bootstrap from collapsing menu so early
+$grid-float-breakpoint: 500px;
+
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
