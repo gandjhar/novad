@@ -14,6 +14,13 @@
  *= require_self
  */
 
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+div#main {
+   margin: 100px;
+}
+
 img.small-cover {
     width: 200px;
     height: 300px;
