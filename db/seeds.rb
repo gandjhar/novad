@@ -61,12 +61,10 @@ Orwell's influence on contemporary culture, popular and political, continues dec
 }],
 
    [ "Albert Camus" , "France",
-     %{
-Albert Camus was an Algerian-born French author, philosopher, and journalist who was awarded the Nobel Prize for Literature in 1957. He is often cited as a proponent of existentialism (the philosophy that he was associated with during his own lifetime), but Camus himself rejected this particular label. Specifically, his views contributed to the rise of the more current philosophy known as absurdism. He wrote in his essay The Rebel that his whole life was devoted to opposing the philosophy of nihilism while still delving deeply into individual freedom.
+%{
+Albert Camus was an Algerian-born French author, philosopher, and journalist. He is often cited as a proponent of existentialism, but Camus rejected this label. His views contributed to the rise of the philosophy known as absurdism. He wrote that his life was devoted to opposing the philosophy of nihilism while delving deeply into individual freedom.  Camus founded the Group for International Liaisons within the Revolutionary Union Movement, a group opposed to some tendencies of the surrealistic movement of André Breton.
 
-In 1949, Camus founded the Group for International Liaisons within the Revolutionary Union Movement, which (according to the book Albert Camus, une vie by Olivier Todd) was a group opposed to some tendencies of the surrealistic movement of André Breton. Camus was the second-youngest recipient of the Nobel Prize for Literature (after Rudyard Kipling) when he became the first Africa-born writer to receive the award, in 1957. He is also the shortest-lived of any literature laureate to date, having died in an automobile accident just over two years after receiving the award.
-
-In an interview in 1945, Camus rejected any ideological associations: "No, I am not an existentialist. Sartre and I are always surprised to see our names linked..."
+Camus was the second-youngest recipient of the Nobel Prize for Literature, as well as the shortest-lived of any literature laureate to date. He died in an automobile accident two years after receiving the award.
 }],
 
    [ "Émile Zola"   , "France",
