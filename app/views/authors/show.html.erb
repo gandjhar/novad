@@ -6,7 +6,7 @@
 
 <p><%= simple_format @author.bio %></p>
 
-<h2>Novels</h2>
+<%= link_to "New Novel", new_novel_path( author_id: @author.id ), class: "btn btn-default", style: "float: right" %></h2>
 
 <% novels = @author.novels.sort_by { |novel| novel.year } %>
 
