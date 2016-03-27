@@ -36,7 +36,17 @@ class NovelsController < ApplicationController
     end
   end
 
-private
+  def destroy
+    @novel = Novel.find( params[:id] )
+
+    author_id = @novel.author_id
+
+    @novel.destroy
+
+    redirect_to author_path( author_id )
+  end
+
+  private
 
   def novel_params
     params.require( :novel ).permit( :title, :year, :cover, :plot, :author_id, genre_ids: [] )
