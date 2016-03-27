@@ -1,3 +1,3 @@
 class Author < ActiveRecord::Base
-   has_many :novels
+   has_many :novels, dependent: :destroy
 end

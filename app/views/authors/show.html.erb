@@ -1,5 +1,7 @@
 <h1>
    <%= @author.name %>
+   <%= link_to "Delete", author_path( @author ), method: :delete, data: { confirm: "Are you sure?" }, class: "btn btn-default", style: "float: right" %>
+   <%= link_to "Edit", edit_author_path( @author ), class: "btn btn-default", style: "float: right" %>
 </h1>
 
 <h3><%= @author.country %></h3>
