@@ -1,5 +1,6 @@
 <h1>
    <%= @novel.title %>
+   <%= link_to "Edit", edit_novel_path( @novel ), class: "btn btn-default", style: "float: right" %>
 </h1>
 
 <h3><%= link_to @novel.author.name, @novel.author %> </h3>

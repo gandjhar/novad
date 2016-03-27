@@ -22,6 +22,20 @@ class NovelsController < ApplicationController
      end
   end
 
+  def edit
+    @novel = Novel.find( params[:id] )
+  end
+
+  def update
+    @novel = Novel.find( params[:id] )
+
+    if @novel.update_attributes( novel_params )
+      redirect_to @novel
+    else
+      render 'edit'
+    end
+  end
+
 private
 
   def novel_params
