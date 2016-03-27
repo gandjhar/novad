@@ -1,13 +1,11 @@
 Rails.application.routes.draw do
 
-  get 'site/home'
-
-  get 'site/about'
-
   resources :authors
   resources :novels
   resources :genres
 
-  root "authors#index"
+  get "about" => "site#about"
+
+  root "site#home"
 
 end

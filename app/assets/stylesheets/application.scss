@@ -55,4 +55,30 @@ div.novel-item {
    margin: 4px;
 }
 
+#main div.nav-box {
+   width: 240px;
+   height: 160px;
+   background: #F99;
+   text-align: center;
+   display: inline-block;
+
+   h2 {
+      position: relative;
+      top: 40%;
+      transform: translateY(-50%);
+      color: black;
+   }
+
+   &.authors {
+      background: #F99;
+   }
+
+   &.novels {
+      background: #CD9;
+   }
+
+   &.genres {
+      background: #99D;
+   }
+}
 
